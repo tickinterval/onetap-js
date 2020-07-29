@@ -123,16 +123,6 @@ function main_hotkeys() {
             }
         }
 
-        if (UI.IsHotkeyActive("Script items", "Minimum damage override")) {
-            doalpha = Math.min(doalpha + frames, 1);
-        } else {
-            doalpha = doalpha - frames;
-            if (doalpha < 0) doalpha = 0;
-            if (doalpha == 0) {
-                h.splice(h.indexOf("Damage override"));
-            }
-        }
-
         if (UI.IsHotkeyActive("Anti-Aim", "Extra", "Slow walk")) {
             if (h.indexOf("Slow walk") == -1)
                 h.push("Slow walk")
@@ -164,10 +154,6 @@ function main_hotkeys() {
         if (UI.IsHotkeyActive("Rage", "Exploits", "Hide shots")) {
             if (h.indexOf("Hide shots") == -1)
                 h.push("Hide shots")
-        }
-        if (UI.IsHotkeyActive("Script items", "Minimum damage override")) {
-            if (h.indexOf("Damage override") == -1)
-                h.push("Damage override")
         }
 
         if (h.length > 0) {
