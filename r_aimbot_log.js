@@ -256,11 +256,6 @@ function onDraw() {
           shots++;
       }
     }
-
-else {
-    Render.FilledRect(0, 0, Global.GetScreenSize()[0], Global.GetScreenSize()[1] / 2, [0, 180, 255, 255]);
-    Render.FilledRect(0, Global.GetScreenSize()[1] / 2, Global.GetScreenSize()[0], Global.GetScreenSize()[1] / 2, [255, 255, 0, 255]);
-}
 }
 
 function main() {
