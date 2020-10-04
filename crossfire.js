@@ -19,11 +19,11 @@ function draw() {
 	
 	
 	if (kills > 0 && Globals.Curtime() < (lastkill + 2) && headshot == false) {
-		Render.TexturedRect(Global.GetScreenSize()[0]/2 - 79, Global.GetScreenSize()[1] - 158, 158, 158, RenderFrame);
+		Render.TexturedRect(Global.GetScreenSize()[0]/2 - 79, 258, 158, 158, RenderFrame);
 	}
 	else if (kills == 1 && Globals.Curtime() < (lastkill + 2) && headshot == true) {
 		RenderFrame = Render.AddTexture("ot/killmarks/badge_headshot_gold.png");
-		Render.TexturedRect(Global.GetScreenSize()[0]/2 - 79, Global.GetScreenSize()[1] - 158, 158, 158, RenderFrame);
+		Render.TexturedRect(Global.GetScreenSize()[0]/2 - 79, 258, 158, 158, RenderFrame);
 	}
 	
 	if (Globals.Curtime() > (lastkill + 2) || kills > 1) {
